@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+	  	  Scanner sc = new Scanner(System.in);
+		  	
+	  	 int H,M;
+	  	  H = sc.nextInt();
+	  	  M = sc.nextInt();
+
+		      		  sc.close();
+		      
+		     if(M >= 45) {
+		    	 System.out.printf("%d ",H);
+		    	 System.out.print(M-45);
+		     }else if(M < 45) {
+		    	 if( H == 0) {
+		    		 System.out.printf("%d ", 23);
+		    		 System.out.println(M+15);
+		    	 }else {
+		    		 System.out.printf("%d ", H-1);
+		    		 System.out.println(M+15);
+		    	 }
+	 
+		     }
+	}
+}
